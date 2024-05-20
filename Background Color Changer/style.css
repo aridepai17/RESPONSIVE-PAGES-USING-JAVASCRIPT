@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: lightgreen;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: SF Pro Display Heavy;
+}
+
