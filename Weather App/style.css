@@ -1,0 +1,47 @@
+body {
+    font-family: SF Pro Display Heavy;
+    margin: 0;
+    padding: 0;
+    background-color: #f0e2e2;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.searchcontainer {
+    margin-bottom: 20px;
+}
+
+#cityinput {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+
+#searchbtn {
+    padding: 10px 40px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+.weatherinfo {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+#weathericon {
+    width: 100px;
+    height: 100px;
+}
