@@ -1,0 +1,46 @@
+body{
+    font-family: Creato Display;
+    text-align: center;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 600px;
+    max-width: 0 auto;
+    padding: 200px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 250px;
+    height: 320px;
+}
+
+.inputcontainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#inputtext{
+    padding:10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 300px;
+}
+
+#generatebutton{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#qrcodecontainer{
+    margin-top: 100px;
+}
