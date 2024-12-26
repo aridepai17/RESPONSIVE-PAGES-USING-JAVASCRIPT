@@ -1,0 +1,130 @@
+/* General body styling with enhanced background */
+body {
+    font-family: SF Pro Display Black , sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #000000, #2a5298, #1e3c72);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Smooth gradient animation for the background */
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Upload Section Styling */
+.upload-section {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.upload-button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.upload-button:hover {
+    background-color: #000000;
+    transform: translateY(-2px);
+}
+
+/* Comparison Container Styling */
+.comparison-container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background-color: #000;
+}
+
+/* Styling for images and overlay remains unchanged */
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+}
+
+.image-overlay img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Slider Styling */
+.slider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: #fff;
+    cursor: ew-resize;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.slider:hover {
+    background-color: #000000;
+}
+
+/* Add slight zoom-in effect on hover for the container */
+.comparison-container:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s;
+}
+
+img {
+    display: block;
+    width: 100%; /* or desired size */
+    height: auto;
+}
+
+img:not([src]) {
+    display: none; /* Hides any <img> without a source */
+}
+
+img[src=""] {
+    display: none; /* Hides <img> tags with empty src */
+}
+

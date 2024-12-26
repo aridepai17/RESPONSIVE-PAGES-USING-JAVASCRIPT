@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Comparison Tool</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Image Upload Section -->
+    <div class="upload-section">
+        <label for="image1-upload" class="upload-button">Select First Image</label>
+        <input type="file" id="image1-upload" accept="image/*" style="display: none;">
+        
+        <label for="image2-upload" class="upload-button">Select Second Image</label>
+        <input type="file" id="image2-upload" accept="image/*" style="display: none;">
+    </div>
+
+    <!-- Image Comparison Container -->
+    <div class="comparison-container">
+        <!-- Base Image -->
+        <img src="" class="image" id="base-image">
+
+        <!-- Overlay Image -->
+        <div class="image-overlay">
+            <img src="" id="overlay-image">
+        </div>
+
+        <!-- Slider Bar -->
+        <div class="slider"></div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
